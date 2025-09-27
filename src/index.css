@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+.container-default { 
+  @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8; 
+}
+.section-default { 
+  @apply w-full py-20 md:py-28; 
+}
+
+
+
