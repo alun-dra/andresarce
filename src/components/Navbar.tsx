@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import logo from '../assets/logo.jpg';
+import { ArrowRight } from "lucide-react";
 
 export default function Navbar() {
   const navRef = useRef<HTMLElement | null>(null);
@@ -31,10 +32,23 @@ export default function Navbar() {
         </a>
         <div className="hidden items-center gap-6 md:flex">
           <a className="text-sm font-medium text-coal/80 hover:text-coal" href="#propuestas">Propuestas</a>
-          <a className="text-sm font-medium text-coal/80 hover:text-coal" href="#agenda">Agenda</a>
-          <a className="text-sm font-medium text-coal/80 hover:text-coal" href="#distrito">Distrito 12</a>
-          <a className="text-sm font-medium text-coal/80 hover:text-coal" href="#transparencia">Transparencia</a>
-          <a className="rounded-full bg-navy px-4 py-2 text-sm font-semibold text-white hover:bg-navy/80" href="#participa">Participa</a>
+          {/* <a className="text-sm font-medium text-coal/80 hover:text-coal" href="#agenda">Agenda</a> */}
+          <a className="text-sm font-medium text-coal/80 hover:text-coal" href="#accion">Tu voz</a>
+          {/* <a className="text-sm font-medium text-coal/80 hover:text-coal" href="#transparencia">Transparencia</a> */}
+       <a
+  href="#participa"
+  className="inline-flex items-center gap-2 rounded-lg bg-[#1f3869] px-5 py-2 text-sm font-semibold text-white shadow-sm hover:bg-[#152747] transition-colors"
+>
+  Súmate
+  <ArrowRight size={16} className="text-white" />
+</a>
+
+
+
+
+
+
+
         </div>
       </div>
     </nav>

@@ -4,14 +4,16 @@ import Propuestas from './sections/Propuestas'
 import VozEnAccion from './sections/VozEnAccion'
 import Transparencia from './sections/Transparencia'
 import Recursos from './sections/Recursos'
+import Redes from './sections/Redes'
 export default function App(){
-return (
-<Layout>
-<Hero />
-<Propuestas />
-<VozEnAccion />
-<Transparencia />
-<Recursos />
-</Layout>
-)
+    return (
+        <Layout>
+        <Hero />
+        <Propuestas />
+        <VozEnAccion />
+        <Redes />
+        {/* <Transparencia />
+        <Recursos /> */}
+        </Layout>
+    )
 }
