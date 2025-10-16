@@ -1,6 +1,6 @@
 import { Section, Container } from '../ui/primitives'
-import posterImg from '../assets/andresarce_cropped.png'
-import posterImg800 from '../assets/andresarce_cropped_800.png'
+// import posterImg from '../assets/andresarce_cropped.png'
+// import posterImg800 from '../assets/andresarce_cropped_800.png'
 import { Shield, Users, Briefcase, BarChart3 } from 'lucide-react'
 
 export default function VozEnAccion() {
@@ -12,7 +12,7 @@ export default function VozEnAccion() {
           <figure className="relative md:col-span-5">
   <div className="relative w-full overflow-hidden rounded-xl shadow-2xl ring-1 ring-white/10 bg-[#14294B]">
     <img
-      src={posterImg}
+      src="/assets/andresarce_cropped.png"
       alt="Afiche de campaña de Andrés Arce, candidato a diputado por el Distrito 12"
       className="w-full h-auto mx-auto block scale-[1.08] object-cover [object-position:50%_center]"
       loading="lazy"

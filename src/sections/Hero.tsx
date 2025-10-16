@@ -3,7 +3,7 @@ import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import CivicBg from '../components/CivicBg'      // sin extensión
-import heroImg from '../assets/principal.jpg'
+// import heroImg from '../assets/principal.jpg'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -40,7 +40,7 @@ export default function Hero() {
   }, [])
 
   return (
-    <section id="inicio" className="relative overflow-hidden pt-24 md:pt-28 min-h-[85vh]">
+    <section id="inicio" className="relative overflow-hidden pt-24 md:pt-28 pb-20 md:pb-28 min-h-[85vh]">
       <CivicBg />
 
       {/* Veil para contraste en pantallas pequeñas */}
@@ -142,7 +142,7 @@ export default function Hero() {
         <div className="relative">
           <div ref={cardRef} className="mx-auto w-full max-w-md">
             <figure className="relative overflow-hidden rounded-3xl ring-1 ring-black/10 shadow-2xl shadow-black/40">
-              <img src={heroImg} alt="Andrés Arce" className="h-[620px] w-full object-cover md:h-[660px]" />
+              <img src="/assets/principal.JPG" alt="Andrés Arce" className="h-[620px] w-full object-cover md:h-[660px]" />
             </figure>
           </div>
         </div>

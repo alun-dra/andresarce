@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import logo from '../assets/logo.jpg';
+// import logo from '../assets/logo.jpg';
 import { ArrowRight } from "lucide-react";
 
 export default function Navbar() {
@@ -27,7 +27,7 @@ export default function Navbar() {
     >
       <div className="container-default flex h-16 items-center justify-between gap-6">
         <a href="#inicio" className="flex items-center gap-3">
-          <img src={logo} alt="Logo Andrés Arce" className="h-8 w-auto" />
+          <img src="/assets/logo.jpg" alt="Logo Andrés Arce" className="h-8 w-auto" />
           <span className="font-semibold tracking-tight text-coal">Andrés Arce</span>
         </a>
         <div className="hidden items-center gap-6 md:flex">
