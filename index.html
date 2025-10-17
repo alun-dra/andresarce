@@ -3,81 +3,100 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="theme-color" content="#0F1E3A" />
+    <meta name="color-scheme" content="light only" />
 
     <!-- Primary Meta -->
     <title>Andrés Arce — Candidato a Diputado | Libertad, Empleo y Seguridad</title>
-    <meta
-      name="description"
-      content="Sitio oficial de Andrés Arce, candidato a diputado en Chile. Conoce sus propuestas en libertad económica, seguridad, empleo y transparencia. Súmate y participa."
-    />
+    <meta name="description" content="Sitio oficial de Andrés Arce, candidato a diputado en Chile. Conoce sus propuestas en libertad económica, seguridad, empleo y transparencia. Súmate y participa." />
     <meta name="author" content="Andrés Arce" />
-    <meta
-      name="robots"
-      content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1"
-    />
-    <meta name="theme-color" content="#0F1E3A" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
     <!-- Canonical & Hreflang -->
     <link rel="canonical" href="https://www.andresarce.cl/" />
-    <link rel="alternate" href="https://www.andresarce.cl/" hreflang="es-cl" />
-    <link rel="alternate" href="https://www.andresarce.cl/" hreflang="x-default" />
+    <link rel="alternate" hreflang="es-cl" href="https://www.andresarce.cl/" />
+    <link rel="alternate" hreflang="x-default" href="https://www.andresarce.cl/" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Andrés Arce" />
     <meta property="og:title" content="Andrés Arce — Candidato a Diputado" />
-    <meta
-      property="og:description"
-      content="Conoce el programa y propuestas de Andrés Arce: libertad económica, seguridad, empleo y transparencia."
-    />
+    <meta property="og:description" content="Conoce el programa y propuestas de Andrés Arce: libertad económica, seguridad, empleo y transparencia." />
     <meta property="og:url" content="https://www.andresarce.cl/" />
     <meta property="og:locale" content="es_CL" />
     <meta property="og:image" content="https://www.andresarce.cl/og/andres-arce-og.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Retrato de Andrés Arce, candidato a diputado en Chile" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Andrés Arce — Candidato a Diputado" />
-    <meta
-      name="twitter:description"
-      content="Propuestas claras para Chile: libertad económica, seguridad, empleo y transparencia."
-    />
+    <meta name="twitter:description" content="Propuestas claras para Chile: libertad económica, seguridad, empleo y transparencia." />
     <meta name="twitter:image" content="https://www.andresarce.cl/og/andres-arce-og.jpg" />
+    <!-- (Opcional) agrega tus @ si los tienes -->
+    <!-- <meta name="twitter:site" content="@andresarce" /> -->
+    <!-- <meta name="twitter:creator" content="@andresarce" /> -->
 
     <!-- Favicons / App Icons -->
     <link rel="icon" type="image/jpeg" href="/logo.jpg" />
     <link rel="apple-touch-icon" href="/logo.jpg" />
     <link rel="manifest" href="/site.webmanifest" />
 
-    <!-- JSON-LD: Perfil del candidato -->
+    <!-- Preload de imágenes críticas (ajusta rutas reales) -->
+    <link rel="preload" as="image" href="/public/assets/principal.JPG" imagesrcset="/public/assets/principal.JPG 1200w" />
+    <!-- Si usas Google Fonts, añade preconnect -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+
+    <!-- JSON-LD: Person + Organization + WebSite -->
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Andrés Arce",
-        "url": "https://www.andresarce.cl/",
-        "image": "https://www.andresarce.cl/og/andres-arce-og.jpg",
-        "jobTitle": "Candidato a Diputado",
-        "affiliation": {
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "name": "Andrés Arce",
+          "url": "https://www.andresarce.cl/",
+          "image": "https://www.andresarce.cl/og/andres-arce-og.jpg",
+          "jobTitle": "Candidato a Diputado",
+          "memberOf": { "@type": "PoliticalParty", "name": "Partido Nacional Libertario" },
+          "affiliation": { "@type": "Organization", "name": "Partido Nacional Libertario" },
+          "worksFor": { "@type": "Organization", "name": "Candidatura a Diputado" },
+          "knowsAbout": ["libertad económica","seguridad","empleo","transparencia"],
+          "areaServed": { "@type": "AdministrativeArea", "name": "Chile" },
+          "address": { "@type": "PostalAddress", "addressCountry": "CL" },
+          "sameAs": [
+            "https://www.instagram.com/andres_arce_cand_diputado_d12/",
+            
+          ]
+        },
+        {
           "@type": "Organization",
-          "name": "Partido Nacional Libertario"
+          "name": "Andrés Arce",
+          "url": "https://www.andresarce.cl/",
+          "logo": "https://www.andresarce.cl/logo.jpg",
+          "sameAs": [
+            "https://x.com/andres1arce?lang=es",
+            "https://www.instagram.com/andres_arce_cand_diputado_d12/",
+            
+          ]
         },
-        "address": {
-          "@type": "PostalAddress",
-          "addressCountry": "CL"
-        },
-        "sameAs": [
-          "https://x.com/andresarce",
-          "https://www.instagram.com/andresarce",
-          "https://www.facebook.com/andresarce"
-        ]
-      }
+        {
+          "@type": "WebSite",
+          "name": "Andrés Arce",
+          "url": "https://www.andresarce.cl/",
+          "inLanguage": "es-CL"
+        }
+      ]
+    }
     </script>
 
     <!-- Vite -->
     <meta name="generator" content="Vite" />
   </head>
+
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
