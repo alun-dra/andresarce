@@ -1,5 +1,5 @@
 export const homeSEO = {
-  title: "Andrés Arce — Candidato a Diputado | Libertad, Empleo y Seguridad",
+  title: "Andrés Arce candidato a diputado — Libertad, empleo y seguridad en Chile",
   description:
     "Sitio oficial de Andrés Arce, candidato a diputado en Chile. Conoce sus propuestas en libertad económica, seguridad, empleo y transparencia. Súmate y participa.",
   canonical: "https://www.andresarce.cl/",
