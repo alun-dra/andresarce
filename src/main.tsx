@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
-import './ui/index.css'
+import './index.css'
 import { initAnalytics, trackPageview } from './lib/analytics'
 
 if (import.meta.env.PROD) {
